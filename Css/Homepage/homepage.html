@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #f1f6f1;
+        font-family: "Spacegrotesk variablefont wght", sans-serif;
+      }
+      .header {
+        background-image: url(https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bc2852d721c4e6c83efb80_First%20Fold%20BG.svg);
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+      }
+      .menu {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+      }
+      nav ul li {
+        list-style: none;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      nav a:hover {
+        color: #6e61ff;
+      }
+      nav button {
+        display: flex;
+        padding: 12px 24px;
+        -webkit-box-align: center;
+        align-items: center;
+        border: 2px solid #000;
+        border-radius: 30px;
+        background-color: #6e61ff;
+        box-shadow: 3px 3px 0 0 #031926;
+        transition: all 200ms ease;
+        font-family: "Spacegrotesk variablefont wght", sans-serif;
+        color: #fff;
+        font-size: 18px;
+        line-height: 160%;
+        letter-spacing: -0.02em;
+        text-decoration: none;
+      }
+      #header {
+        margin-top: 200px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+      #line1 {
+        display: flex;
+        gap: 15px;
+      }
+      .event-tag {
+        width: 100px;
+        height: 40px;
+        padding: 6px;
+        border: 2px solid #000;
+        border-radius: 50px;
+        background-color: #ff611e;
+        transform: rotate(-8deg);
+        box-shadow: 3px 3px 0 0 #031926;
+      }
+      .event-tag-inner {
+        display: flex;
+        height: 100%;
+        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #000;
+        border-radius: 50px;
+      }
+      .event-tag-text {
+        color: #031926;
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: 700;
+      }
+      .event-img{
+        display: flex ;
+        gap: 10px;
+      }
+      .event-img img {
+        border-radius: 50%;
+        border: 1px solid black;
+        position: relative;
+        
+        box-shadow: 3px 3px 0 0 #031926;
+      }
+      #img1{
+        z-index: 500;
+        background-color: white;
+      }
+      #img2{
+        position: relative;
+        right: 20px;
+        z-index: 400;
+        background-color: white;
+      }
+      #img3{
+        position: relative;
+        right: 40px;
+        z-index: 300;
+        background-color: white;
+      }
+      #img5{
+        position: relative;
+        top: -40px;
+        left: -10px;
+      }
+      #img6{
+        position: relative;
+        left: -30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <ul>
+          <li>
+            <a href="">
+              <img
+                src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62c6f20520749131dfee42d5_Hybrid-state-of-mind-logo.svg"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+        <ul class="menu">
+          <li>
+            <a href=""> Member Benefits </a>
+          </li>
+          <li>
+            <a href=""> Code Of Conduct </a>
+          </li>
+          <li>
+            <a href=""> FAQ's </a>
+          </li>
+          <button>Join The Community ></button>
+        </ul>
+      </nav>
+      <div id="header">
+        <div id="line1">
+          <h1>Where</h1>
+          <div class="event-tag">
+            <div class="event-tag-inner">
+              <div class="event-tag-text">event</div>
+            </div>
+          </div>
+          <h1>Folks</h1>
+        </div>
+        <div class="event-img">
+            <img height="50" id="img1" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb51b9115e8836690faa_Avatar%201.png" alt="">
+            <img height="50" id="img2" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb513fbee78665e77a33_Avatar%202.png" alt="">
+            <img height="50" id="img3" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb51a0bf239c25cf39a5_Avatar%203.png" alt="">
+
+        </div>
+        <div class="event-img2">
+            <img id="img4" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb7a829834f794641946_Vector-1.svg" alt="">
+          
+            <img id="img5" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb6b45d9629d5a40c64d_Vector-2.svg" alt="">
+            <img id="img6" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb7a4edab1ad179dd916_Vector.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
