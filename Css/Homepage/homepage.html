@@ -18,6 +18,7 @@
         justify-content: space-around;
         align-items: center;
         z-index: 1000;
+        background-color: #f1f6f1;
         width: 100%;
         position: fixed;
         top: 0px;
@@ -94,41 +95,64 @@
         line-height: 30px;
         font-weight: 700;
       }
-      .event-img{
-        display: flex ;
+      .event-img {
+        display: flex;
         gap: 10px;
       }
       .event-img img {
         border-radius: 50%;
         border: 1px solid black;
         position: relative;
-        
+
         box-shadow: 3px 3px 0 0 #031926;
       }
-      #img1{
+      #img1 {
         z-index: 500;
         background-color: white;
       }
-      #img2{
+      #img2 {
         position: relative;
         right: 20px;
         z-index: 400;
         background-color: white;
       }
-      #img3{
+      #img3 {
         position: relative;
         right: 40px;
         z-index: 300;
         background-color: white;
       }
-      #img5{
+      #img5 {
         position: relative;
         top: -40px;
         left: -10px;
       }
-      #img6{
+      #img6 {
         position: relative;
         left: -30px;
+      }
+      .section1{
+        overflow: hidden;
+      }
+      .background {
+        line-height: 100px;
+        font-size: 32px;
+      }
+      .card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 900;
+        position: absolute;
+        top: 80%;
+      }
+      .card div{
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #f1f6f1;
+        border: 1px solid gray;
+        width: 600px;
+        text-align: center;
       }
     </style>
   </head>
@@ -169,16 +193,64 @@
           <h1>Folks</h1>
         </div>
         <div class="event-img">
-            <img height="50" id="img1" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb51b9115e8836690faa_Avatar%201.png" alt="">
-            <img height="50" id="img2" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb513fbee78665e77a33_Avatar%202.png" alt="">
-            <img height="50" id="img3" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb51a0bf239c25cf39a5_Avatar%203.png" alt="">
-
+          <img
+            height="50"
+            id="img1"
+            src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb51b9115e8836690faa_Avatar%201.png"
+            alt=""
+          />
+          <img
+            height="50"
+            id="img2"
+            src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb513fbee78665e77a33_Avatar%202.png"
+            alt=""
+          />
+          <img
+            height="50"
+            id="img3"
+            src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62bbfb51a0bf239c25cf39a5_Avatar%203.png"
+            alt=""
+          />
         </div>
         <div class="event-img2">
-            <img id="img4" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb7a829834f794641946_Vector-1.svg" alt="">
-          
-            <img id="img5" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb6b45d9629d5a40c64d_Vector-2.svg" alt="">
-            <img id="img6" src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb7a4edab1ad179dd916_Vector.svg" alt="">
+          <img
+            id="img4"
+            src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb7a829834f794641946_Vector-1.svg"
+            alt=""
+          />
+
+          <img
+            id="img5"
+            src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb6b45d9629d5a40c64d_Vector-2.svg"
+            alt=""
+          />
+          <img
+            id="img6"
+            src="https://assets.website-files.com/62b9439f38ce8f1b46fb7600/62cbdb7a4edab1ad179dd916_Vector.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="section1">
+      <div class="background">
+        <h1>
+          Event Professionals Marketers Community Managers Influencers
+          Professionals Event Ma Marketers Community Managers Influencers Event
+          Planners Event Planners Influencers HR Professionals HR Professionals
+          Event Planners HR Professionals Event Managers Influencers Event
+          Planners Marketers Event Planners Influencers Event Planners HR Profes
+        </h1>
+      </div>
+      <div class="card">
+        <div>
+          <h1>Who is this for?</h1>
+          <p>
+            Simply put, this community is for anyone who is actively engaged in
+            organizing and planning events, or plans to do. So whether you are a
+            CMO, CHRO, a field marketer, or an aspiring event expert, this
+            community is for you.
+          </p>
         </div>
       </div>
     </div>
