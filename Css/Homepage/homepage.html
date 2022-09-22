@@ -131,14 +131,20 @@
         position: relative;
         left: -30px;
       }
-      .section1{
+      .section1 {
         overflow: hidden;
+        background-color: white !important;
+      }
+      .background h1 {
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #cdd1d4;
+        color: white;
       }
       .background {
         line-height: 100px;
         font-size: 32px;
       }
-      .card{
+      .card {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -146,13 +152,19 @@
         position: absolute;
         top: 80%;
       }
-      .card div{
-        padding: 10px;
-        border-radius: 10px;
-        background-color: #f1f6f1;
-        border: 1px solid gray;
-        width: 600px;
+      .card div {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        max-width: 730px;
+        margin: 50px auto;
+        padding: 30px 30px;
+        flex-direction: column;
         text-align: center;
+        border: 2px solid #000;
+        border-radius: 24px;
+        background-color: #dcf7e7;
+        box-shadow: 6px 6px 0 0 #000;
       }
     </style>
   </head>
