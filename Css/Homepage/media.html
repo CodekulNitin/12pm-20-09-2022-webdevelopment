@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .card {
+        border: 1px solid gray;
+        width: 300px;
+        align-items: center;
+        overflow: hidden;
+
+        line-height: 2px;
+      }
+      .card img {
+        height: 200px;
+      }
+      #heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        height: 30px;
+      }
+      #heading :nth-child(1) {
+        color: gray;
+      }
+      #heading :nth-child(2) {
+        color: green;
+        border: 1px solid green;
+        border-radius: 10px;
+        padding: 7px;
+      }
+      #heading1 p {
+        color: green;
+      }
+      #heading2 {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .card :nth-child(5) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+      .card button {
+        width: 100%;
+        background-color: orange;
+        border: none;
+        height: 30px;
+      }
+      #playbtn {
+        color: white;
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        top: 12%;
+        left: 9%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        border: 6px solid white;
+        border-radius: 50%;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div>
+        <img
+          src="https://cdn.pixabay.com/photo/2022/07/06/13/10/vintage-car-7305109_960_720.jpg"
+          alt=""
+        />
+        <div id="playbtn">
+          <i class="fa-solid fa-play"></i>
+        </div>
+      </div>
+      <div id="heading">
+        <h4>Graphic Design</h4>
+        <h4>* 4.4</h4>
+      </div>
+      <div id="heading1">
+        <h4>Fundamentals Of Design & Drawing</h4>
+        <p>2542.32</p>
+      </div>
+      <div id="heading2">
+        <p>54hrs</p>
+        <p>37 Sessions</p>
+        <p>28k+users</p>
+      </div>
+      <div>
+        <button>Join Course</button>
+      </div>
+    </div>
+  </body>
+</html>
