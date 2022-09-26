@@ -73,6 +73,55 @@
         border-radius: 50%;
         padding: 5px;
       }
+      .web {
+        height: 100px;
+        width: 100px;
+        background-color: antiquewhite;
+        border-radius: 50%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      .web img {
+        height: 50px;
+        width: 50px;
+      }
+      .section3 {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        align-items: center;
+        width: 100%;
+      }
+      .card1 {
+        /* border: 1px solid gray; */
+        box-shadow: 1px 1px 1px 1px lightgray;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+      }
+      .card1 h1{
+        color: #0C2C6B;
+      }
+      .footer{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+      }
+      .column1{
+        grid-column-start: 1;
+        grid-column-end:3 ;
+        border: 1px solid blue;
+      }
+      .column2{
+        grid-column-start: 3;
+        grid-column-end:5 ;
+        border: 1px solid blue;
+      }
     </style>
   </head>
   <body>
@@ -103,5 +152,95 @@
         <button>Join Course</button>
       </div>
     </div>
+    <div class="section3">
+      <div class="card1">
+        <div class="web">
+          <img src="./assets/web.svg" />
+        </div>
+        <div>
+          <h1>Web Development</h1>
+          <p>Eleifend odio elit etiam praesent pharetra,vel</p>
+        </div>
+      </div>
+
+      <div class="web">
+        <img src="./assets/digital.svg" />
+      </div>
+      <div class="web">
+        <img src="./assets/graphics.svg" />
+      </div>
+      <div class="web">
+        <img src="./assets/app.svg" />
+      </div>
+    </div>
+    <footer>
+<div class="footer">
+  <div class="column1">
+    <h1>Learnit</h1>
+    <p>Steet no 340, New York,  United States</p>
+    <div>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+  </div>
+
+    <div class="column2">
+      <h1>Learnit</h1>
+      <p>Steet no 340, New York,  United States</p>
+      <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+
+    <div class="column3">
+      <h1>Learnit</h1>
+      <p>Steet no 340, New York,  United States</p>
+      <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+
+    <div class="column4">
+      <h1>Learnit</h1>
+      <p>Steet no 340, New York,  United States</p>
+      <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+    <div class="column5">
+      <h1>Learnit</h1>
+      <p>Steet no 340, New York,  United States</p>
+      <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+    <div class="column6">
+      <h1>Learnit</h1>
+      <p>Steet no 340, New York,  United States</p>
+      <div>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
+      </div>
+    </div>
+  
+</div>
+    
+    </footer>
   </body>
 </html>
