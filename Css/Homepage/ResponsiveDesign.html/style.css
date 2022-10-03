@@ -1,0 +1,107 @@
+body{
+    background-color: #f8f4ee;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f4ee;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px gray;
+    overflow: hidden;
+    z-index: 1000;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.menu{
+    margin-right: 60px;
+}
+.menubtn {
+    display: none;
+}
+.header{
+   width: 100%;
+   display: flex;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    /* justify-items: center; */
+    /* justify-self: center; */
+}
+#header{
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.section2{
+    overflow: hidden;
+ 
+}
+.section2 img{
+height: 600px;
+overflow: hidden;
+margin-left: 100px;
+}
+.card{
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 400px;
+    right: 440px;
+}
+.section1{
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    /* text-align: center; */
+    /* line-height: 60px; */
+}
+.section1 h1{
+font-size: 60px;
+line-height: 10px;
+
+
+}
+.section1 p{
+text-align: left;
+width: 80%;
+    
+    }
+@media only screen and (max-width:767px){
+    .menu{
+        display: none;
+    }
+    .menubtn{
+        margin-right: 30px;
+        display: block;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1023px){
+    .menu{
+        display: none;
+    }
+    .menubtn{
+        margin-right: 30px;
+        display: block;
+    }
+}
