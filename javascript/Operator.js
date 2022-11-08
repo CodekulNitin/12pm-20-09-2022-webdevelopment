@@ -111,7 +111,7 @@ const normalUser = true;
 const user1 = "superAdmin";
 const user2 = "admin";
 const user3 = "accountant";
-const user4 = "normalUser";
+const user4 = "normalUser";    
 
 if (superAdmin && user1 ==="superAdmin" && user2 ==="admin" && user3 === "accountant" && user4 === "normalUser"){
   console.log("welcome To Super Admin Page");
