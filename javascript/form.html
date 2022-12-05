@@ -1,7 +1,4 @@
 <!-- Curd operation table with edit,delete functionality  -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +45,7 @@
                             <th>Salary</th>
                             <th>City</th>
                             <th>Edit</th>
-                      
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -61,7 +58,6 @@
     <script>
         let selectedRow = null;
 
-
         function onFormSubmit() {
             let formData = readFormData();
             if (selectedRow == null)
@@ -73,6 +69,7 @@
 
         function readFormData() {
             let formData = {};
+            console.log(formData);
             formData["fullName"] = document.getElementById("fullName").value;
             formData["empCode"] = document.getElementById("empCode").value;
             formData["salary"] = document.getElementById("salary").value;
@@ -93,7 +90,8 @@
             cell4.innerHTML = data.city;
             cell5 = newRow.insertCell(4);
             cell5.innerHTML = `<a onClick="onEdit(this)">Edit</a>`
-       
+            cell6 = newRow.insertCell(5);
+            cell6.innerHTML = `<a onClick="onDelete(this)">Delete</a>`
         }
 
         function resetForm() {
@@ -106,14 +104,28 @@
 
         function onEdit(td) {
             selectedRow = td.parentElement.parentElement;
+            console.log(td.parentElement.parentElement);
             document.getElementById("fullName").value = selectedRow.cells[0].innerHTML;
             document.getElementById("empCode").value = selectedRow.cells[1].innerHTML;
             document.getElementById("salary").value = selectedRow.cells[2].innerHTML;
             document.getElementById("city").value = selectedRow.cells[3].innerHTML;
         }
 
-
-
+        function updateRecord(formData) {
+            selectedRow.cells[0].innerHTML = formData.fullName;
+            selectedRow.cells[1].innerHTML = formData.empCode;
+            selectedRow.cells[2].innerHTML = formData.salary;
+            selectedRow.cells[3].innerHTML = formData.city;
+        }
+        // The deleteRow() method removes the row at the specified index from a table. Tip: Use the insertRow() to create and insert a new row
+        function onDelete(td) {
+            if (confirm('Are you sure to delete this record ?')) {
+                row = td.parentElement.parentElement;
+                document.getElementById("employeeList").deleteRow(row.rowIndex);
+                console.log(row.rowIndex);
+                resetForm();
+            }
+        }
     </script>
 </body>
 
